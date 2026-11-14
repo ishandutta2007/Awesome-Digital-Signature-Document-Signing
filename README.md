@@ -1,6 +1,6 @@
 # Awesome-Digital-Signature-Document-Signing
 
-# Top Digital Signature & Document Signing Ecosystem
+## Top Digital Signature & Document Signing Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on E-Signature Workflows, PDF Cryptographic Sealing & Tamper-Evident Audit Trails*  
