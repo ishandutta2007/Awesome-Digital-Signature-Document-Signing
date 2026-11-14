@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColorwwhite" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Signature-Document-Signing?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Signature-Document-Signing?style=social" alt="GitHub_Stars" /></a>
   <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -61,7 +61,7 @@ The global digital signature market is valued at approximately **$12–$14 billi
 
 ### 🚀 Full-Featured Signing Suites & Engines
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---|---|---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | **The leading open-source DocuSign alternative for complete envelope workflows.** AGPLv3 with Section 7(b) terms. WYSIWYG PDF form builder with 12 field types, multiple submitters, automated email notifications, S3/Azure/GCS storage, automatic PDF cryptographic eSignature, mobile signing in 14 languages, REST API, webhooks, and 1-click Docker deployment. Pro adds white-label branding, SSO/SAML, SMS OTP, and embedded React/Vue/JS components. |
 | **[Documenso](https://github.com/documenso/documenso)** | [![Stars](https://img.shields.io/github/stars/documenso/documenso?style=social&color=white)](https://github.com/documenso/documenso/stargazers) | **The modern open-source document signing infrastructure built on Next.js, Prisma, and TypeScript.** Designed for transparency and auditability. Features multi-recipient envelope workflows, template management, cryptographic signature verification, self-hosting via Docker Compose, and developer-first REST/tRPC APIs. |
@@ -77,7 +77,7 @@ The global digital signature market is valued at approximately **$12–$14 billi
 
 ### 🎨 Specialized Signature Pads & UI Components
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---|---|---|
 | **[signature_pad](https://github.com/szimek/signature_pad)** | [![Stars](https://img.shields.io/github/stars/szimek/signature_pad?style=social&color=white)](https://github.com/szimek/signature_pad/stargazers) | **HTML5 canvas-based smooth signature drawing library.** Smooth Bezier-curve stroke interpolation for capturing responsive handwritten signatures across mobile and desktop touchscreens/styluses. |
 | **[react-signature-canvas](https://github.com/agilgur5/react-signature-canvas)** | [![Stars](https://img.shields.io/github/stars/agilgur5/react-signature-canvas?style=social&color=white)](https://github.com/agilgur5/react-signature-canvas/stargazers) | **React component wrapper around `signature_pad`.** Provides trimming, canvas resizing, ref handles, and export utilities for React web applications. |
@@ -119,7 +119,7 @@ Thank you for exploring this curated digital signature and document signing ecos
 
 1. Fork this repository.
 2. Add or update entries in `README.md` keeping the established tabular and metadata conventions.
-3. Include: Product/Project name, link, star badge (for GitHub repos), starting pricing/tier limits or open-source license, and a factual concise description.
+3. Include: Product/Project name, link, Stars_Badge (for GitHub repos), starting pricing/tier limits or open-source license, and a factual concise description.
 4. Submit a Pull Request with a clear description of the addition.
 
 ---
