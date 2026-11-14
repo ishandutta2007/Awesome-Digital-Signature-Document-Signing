@@ -1,25 +1,34 @@
-# Awesome-Digital-Signature-Document-Signing
+# Awesome Digital Signature & Document Signing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Digital Signature & Document Signing Ecosystem
+> A curated directory of the best SaaS platforms and open-source GitHub projects for digital signatures, electronic signatures (e-signature), PDF cryptographic sealing, PAdES/eIDAS compliance, and tamper-evident audit trails.
 
-**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
-*Focused on E-Signature Workflows, PDF Cryptographic Sealing & Tamper-Evident Audit Trails*  
-**Last updated: March 2026**
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Signature-Document-Signing?style=social)](https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/stargazers)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/pulls)
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Digital Signature & Document Signing**. These tools help organizations send documents for legally binding electronic signatures—covering envelope creation, field placement, signer authentication, audit trails, and the cryptographic sealing of completed PDFs.
+---
 
-**Examples** include DocuSign, Adobe Acrobat Sign, Dropbox Sign, PandaDoc, Zoho Sign, SignNow, OneSpan Sign, DocuSeal, and Digitorus pdfsign (the category leaders).
+## Overview
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted e-signature workflows, open-source PDF signing engines, and community-driven document packaging—ideal for developers embedding signing into their own products and organizations seeking data sovereignty over per-envelope SaaS pricing. The open-source landscape spans two distinct layers: **complete signing platforms** (DocuSeal, SignFuz) for turnkey envelope workflows, and **cryptographic signing libraries** (pdfsign, pyHanko) for embedding PAdES/CMS signatures into custom applications.
+This repository provides an authoritative landscape of **SaaS document signing solutions** and **open-source e-signature alternatives**. Whether you are looking for an enterprise contract workflow (DocuSign, Adobe Acrobat Sign), self-hosting a privacy-first DocuSign alternative (DocuSeal, Documenso, OpenSign), or programmatically applying cryptographic PAdES signatures to PDF documents (pyHanko, pdfsign, open-pdf-sign), this list categorizes the top tools by capabilities, transparency, pricing models, and developer friendliness.
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+### Key Capabilities Covered
+- **Electronic & Digital Signatures**: Legally binding signature collection under ESIGN, UETA, and eIDAS (SES, AES, QES).
+- **Self-Hosted & Privacy-First**: Open-source signing servers deployable on Docker/Kubernetes for complete data sovereignty.
+- **Cryptographic PDF Sealing**: PAdES baseline compliance, X.509 certificates, RFC 3161 timestamps, Long-Term Validation (LTV), and post-quantum cryptography (ML-DSA).
+- **Cloud KMS & Hardware Security**: Seamless integration with AWS KMS, Google Cloud KMS, Azure Key Vault, PKCS#11, and hardware security modules (HSMs).
+
+---
 
 ## Table of Contents
 - [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
+  - [Full-Featured Signing Suites & Engines](#full-featured-signing-suites--engines)
+  - [Specialized Signature Pads & UI Components](#specialized-signature-pads--ui-components)
+- [Selection Guide: Which Tool Should You Choose?](#selection-guide-which-tool-should-you-choose)
 - [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [License & Disclaimer](#license--disclaimer)
 
 ## Sector Overview & Market Dynamics
 
@@ -39,6 +48,8 @@ The global digital signature market is valued at approximately **$12–$14 billi
 
 ## Open-Source GitHub Projects
 
+### Full-Featured Signing Suites & Engines
+
 | Project | Star Badge | Description |
 |---|---|---|
 | **[DocuSeal](https://github.com/docusealco/docuseal)** | [![Stars](https://img.shields.io/github/stars/docusealco/docuseal?style=social&color=white)](https://github.com/docusealco/docuseal/stargazers) | **The leading open-source DocuSign alternative for complete envelope workflows.** AGPLv3 with Section 7(b) terms. WYSIWYG PDF form builder with 12 field types, multiple submitters, automated email notifications, S3/Azure/GCS storage, automatic PDF cryptographic eSignature, mobile signing in 14 languages, REST API, webhooks, and 1-click Docker deployment. Pro adds white-label branding, SSO/SAML, SMS OTP, and embedded React/Vue/JS components. |
@@ -53,7 +64,7 @@ The global digital signature market is valued at approximately **$12–$14 billi
 | **[Digitorus pdfsign](https://github.com/digitorus/pdfsign)** | [![Stars](https://img.shields.io/github/stars/digitorus/pdfsign?style=social&color=white)](https://github.com/digitorus/pdfsign/stargazers) | **Pure Go library and CLI for digitally signing and verifying PDFs with PAdES_B_T format.** Supports post-quantum ML-DSA signatures, fluent visual appearance configuration, TTF font embedding, and external signing backends including AWS KMS, GCP KMS, Azure Key Vault, and PKCS#11/HSMs. |
 | **[signed-page/pdf](https://github.com/signed-page/pdf)** | [![Stars](https://img.shields.io/github/stars/signed-page/pdf?style=social&color=white)](https://github.com/signed-page/pdf/stargazers) | **Rust utility for cryptographically signing PDFs using GPG and Sigstore keyless identity.** Enables multi-party contract signing backed by public OIDC accounts (Google/GitHub/Microsoft) with immutable cryptographic transparency logs without complex PKI infrastructure. |
 
-### Additional Specialized Tools
+### Specialized Signature Pads & UI Components
 
 | Project | Star Badge | Description |
 |---|---|---|
@@ -62,24 +73,32 @@ The global digital signature market is valued at approximately **$12–$14 billi
 | **[SignFuz](https://wordpress.org/plugins/sign-fuz/)** | — | **Self-hosted e-signature plugin for WordPress.** GPLv2 licensed. PDF field placement, multi-party sequential/parallel signing, and cryptographic audit evidence trail without external SaaS dependencies. |
 | **[@hasna/signatures](https://www.npmjs.com/package/@hasna/signatures)** | — | **Developer-first e-signature engine with MCP server, CLI, and REST API.** Zero external runtime dependencies, SQLite storage, font/image drawing signature generator, and AI-agent compatibility. |
 
-**Frameworks for building custom systems**: Choose **DocuSeal** for a complete self-hosted e-signature platform with visual field builder and mobile signing , **pdfsign** for embedding PAdES/CMS cryptographic signatures into Go applications with HSM/KMS integration , or **SignFuz** for WordPress-native signing with cryptographic audit trails . For Python, **pyHanko** provides programmatic PDF signing with timestamping and LTV support .
+---
 
-## How to Contribute
+## Selection Guide: Which Tool Should You Choose?
 
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- E-signature platforms handle legally binding agreements and signer PII; ensure compliance with ESIGN, UETA, eIDAS, and applicable data protection regulations. **Audit trails and certificate integrity are legally critical**—do not deploy open-source signing without validating the tamper-evidence of completed PDFs.
-- **Commercial pricing models vary and hidden costs are common.** DocuSign and Adobe charge **per-seat subscriptions**—predictable for small teams but expensive when signing is automated at volume because seats don't map to API calls [citation:2]. Dropbox Sign charges **per signature-request volume** (API Essentials: $75/month for 50 requests), which scales naturally with automation [citation:2]. PandaDoc uses **document quotas with overages (~$0.85/document)** [citation:2]. **Open-source licensing varies significantly**: DocuSeal is **AGPLv3 with Section 7(b) additional terms** —review the LICENSE and LICENSE_ADDITIONAL_TERMS before commercial use [citation:13]. SignFuz is **GPLv2** [citation:3]. pdfsign is a Go library (check repository license). **Always validate cryptographic signature compliance (eIDAS, ESIGN) and audit trail integrity before relying on any tool for legally binding agreements.**
+- **Need a turnkey, self-hosted web app with an envelope builder?** Choose **[DocuSeal](https://github.com/docusealco/docuseal)** (Ruby/Vue) or **[Documenso](https://github.com/documenso/documenso)** / **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** (TypeScript/Next.js/React).
+- **Need programmatic PDF signing in backend code?**
+  - **Python**: Choose **[pyHanko](https://github.com/MatthiasValvekens/pyHanko)** for PAdES, RFC 3161 timestamps, and AWS/GCP KMS.
+  - **Go**: Choose **[Digitorus pdfsign](https://github.com/digitorus/pdfsign)** for PAdES_B_T and post-quantum signing.
+  - **Node.js**: Choose **[node-signpdf](https://github.com/vbuch/node-signpdf)** for lightweight byte-level signature injection.
+  - **Java / Enterprise**: Choose **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** or **[SignServer CE](https://github.com/Keyfactor/signserver-ce)** for clustered HSM and smartcard operations.
+- **Need a client-side signature pad for web apps?** Integrate **[signature_pad](https://github.com/szimek/signature_pad)** (Vanilla JS) or **[react-signature-canvas](https://github.com/agilgur5/react-signature-canvas)** (React).
+- **Need an enterprise SaaS with complete legal/compliance backing?** Evaluate **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** or **[DocuSign](https://www.docusign.com/)** for enterprise suites, **[Dropbox Sign](https://sign.dropbox.com/)** for straightforward API automation, or **[Zoho Sign](https://www.zoho.com/sign/)** for budget-friendly business operations.
 
 ---
 
-**Made for developers, legal ops teams, and organizations building document signing infrastructure.**  
-Let's make digital signature and document signing more open, verifiable, and accessible.
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md` keeping the established tabular and metadata conventions.
+3. Include: Product/Project name, link, star badge (for GitHub repos), starting pricing/tier limits or open-source license, and a factual concise description.
+4. Submit a Pull Request with a clear description of the addition.
+
+---
+
+## License & Disclaimer
+
+- **License**: Content is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (CC0 1.0).
+- **Community Curated**: This is a community-maintained list and does not constitute a formal legal or security endorsement.
+- **Legal Compliance**: E-signature platforms handle legally binding agreements, personal data (PII), and evidentiary audit trails. Validate compliance with your regional regulations (ESIGN, UETA, eIDAS, GDPR) and verify cryptographic certificate validity and long-term validation (LTV) before deploying in production environments.
