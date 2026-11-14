@@ -15,10 +15,15 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
+
+## Sector Overview & Market Dynamics
+
+The global digital signature market is valued at approximately **$12–$14 billion in 2025–2026** and is expanding at a ~25–35% CAGR driven by global eIDAS 2.0 regulations, remote workforce demands, and zero-trust security postures. The sector exhibits a **moderately fragmented** structure: while enterprise behemoths like Adobe and DocuSign dominate mainstream commercial contracts, the broader space remains diversified with specialized PKI trust service providers, regional sovereign compliance vendors, and developer-first API signing solutions.
 
 ## SaaS/Hosted Platforms
 
