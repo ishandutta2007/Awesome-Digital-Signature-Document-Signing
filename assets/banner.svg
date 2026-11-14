@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b19" />
+      <stop offset="45%" stop-color="#0b132b" />
+      <stop offset="100%" stop-color="#1c2541" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a86ff" />
+      <stop offset="50%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#70e000" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd166" />
+      <stop offset="100%" stop-color="#f77f00" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Drop Shadows and Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3a86ff" stroke-width="0.75" stroke-opacity="0.08" />
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes drawSig {
+        0% { stroke-dashoffset: 1200; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes stampPulse {
+        0%, 100% { transform: scale(1) rotate(-4deg); opacity: 0.95; }
+        50% { transform: scale(1.04) rotate(-4deg); opacity: 1; filter: drop-shadow(0 0 12px rgba(0, 245, 212, 0.6)); }
+      }
+      @keyframes orbDrift {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(30px, -20px); }
+        100% { transform: translate(0, 0); }
+      }
+      .anim-glow { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+      .anim-float { animation: floatSlow 5s ease-in-out infinite; }
+      .anim-sig {
+        stroke-dasharray: 1200;
+        stroke-dashoffset: 1200;
+        animation: drawSig 7s ease-in-out infinite;
+      }
+      .anim-stamp { animation: stampPulse 4s ease-in-out infinite; transform-origin: 1040px 140px; }
+      .anim-orb { animation: orbDrift 8s ease-in-out infinite; }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        fill: #ffffff;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+      }
+      .pill-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #e2e8f0;
+      }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Animated Ambient Light Orbs (Background layer) -->
+  <circle cx="200" cy="90" r="140" fill="#3a86ff" opacity="0.18" class="anim-glow" filter="url(#glow)" />
+  <circle cx="1020" cy="180" r="160" fill="#00f5d4" opacity="0.15" class="anim-glow" filter="url(#glow)" />
+  <circle cx="650" cy="360" r="130" fill="#70e000" opacity="0.12" class="anim-orb" filter="url(#glow)" />
+
+  <!-- Decorative Signature Graphic (Mid-ground / Background) -->
+  <g opacity="0.35" class="anim-float">
+    <path d="M 680 270 Q 750 200, 830 250 T 940 220 T 1030 280 T 1140 210" 
+          fill="none" stroke="url(#primaryGrad)" stroke-width="3" stroke-linecap="round" class="anim-sig" />
+    <!-- Audit Trail Event Dots -->
+    <circle cx="730" cy="225" r="4" fill="#00f5d4" opacity="0.8" />
+    <circle cx="850" cy="245" r="4" fill="#3a86ff" opacity="0.8" />
+    <circle cx="985" cy="250" r="4" fill="#70e000" opacity="0.8" />
+    <circle cx="1090" cy="240" r="4" fill="#ffd166" opacity="0.8" />
+  </g>
+
+  <!-- Cryptographic Badge Stamp (Top Right) -->
+  <g class="anim-stamp">
+    <rect x="960" y="55" width="170" height="85" rx="12" fill="#0b132b" stroke="#00f5d4" stroke-width="2" stroke-dasharray="6,4" opacity="0.9" />
+    <text x="1045" y="88" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#00f5d4" letter-spacing="1.5">CRYPTOGRAPHICALLY</text>
+    <text x="1045" y="108" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="800" fill="#ffffff">SEALED &amp; VERIFIED</text>
+    <text x="1045" y="125" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#94a3b8">PAdES-LTA • eIDAS</text>
+  </g>
+
+  <!-- Foreground Content: Titles & Subtitle (Always crisp & unobstructed) -->
+  <g transform="translate(60, 95)" filter="url(#shadow)">
+    <!-- Category Pill Tag -->
+    <rect x="0" y="0" width="220" height="30" rx="15" fill="#1e293b" stroke="#3a86ff" stroke-width="1.2" opacity="0.95" />
+    <circle cx="16" cy="15" r="5" fill="#00f5d4" />
+    <text x="30" y="20" font-family="sans-serif" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1">CURATED ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="80" class="title-text">Awesome Digital Signature</text>
+    <text x="0" y="130" class="title-text" fill="url(#primaryGrad)">&amp; Document Signing</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="172" class="subtitle-text">The definitive guide to enterprise SaaS platforms &amp; open-source PDF signing engines</text>
+  </g>
+
+  <!-- Foreground Interactive-style Feature Pills (Bottom Bar) -->
+  <g transform="translate(60, 325)">
+    <!-- Pill 1: E-Signature Workflows -->
+    <g transform="translate(0, 0)">
+      <rect width="195" height="42" rx="21" fill="url(#pillGrad)" stroke="#334155" stroke-width="1.5" />
+      <text x="20" y="26" font-size="16">✍️</text>
+      <text x="46" y="26" class="pill-text">E-Sign Workflows</text>
+    </g>
+
+    <!-- Pill 2: PAdES & Cryptographic Sealing -->
+    <g transform="translate(210, 0)">
+      <rect width="195" height="42" rx="21" fill="url(#pillGrad)" stroke="#334155" stroke-width="1.5" />
+      <text x="20" y="26" font-size="16">🔏</text>
+      <text x="46" y="26" class="pill-text">PAdES &amp; Cryptography</text>
+    </g>
+
+    <!-- Pill 3: Self-Hosted & Open Source -->
+    <g transform="translate(420, 0)">
+      <rect width="180" height="42" rx="21" fill="url(#pillGrad)" stroke="#334155" stroke-width="1.5" />
+      <text x="18" y="26" font-size="16">⚡</text>
+      <text x="44" y="26" class="pill-text">Self-Hosted Tools</text>
+    </g>
+
+    <!-- Pill 4: Cloud KMS & HSM -->
+    <g transform="translate(615, 0)">
+      <rect width="185" height="42" rx="21" fill="url(#pillGrad)" stroke="#334155" stroke-width="1.5" />
+      <text x="18" y="26" font-size="16">🛡️</text>
+      <text x="44" y="26" class="pill-text">KMS / HSM Backed</text>
+    </g>
+
+    <!-- Pill 5: Tamper-Evident Audit -->
+    <g transform="translate(815, 0)">
+      <rect width="195" height="42" rx="21" fill="url(#pillGrad)" stroke="#334155" stroke-width="1.5" />
+      <text x="18" y="26" font-size="16">📜</text>
+      <text x="44" y="26" class="pill-text">Tamper-Proof Audit</text>
+    </g>
+  </g>
+</svg>
