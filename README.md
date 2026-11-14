@@ -1,40 +1,51 @@
-# Awesome Digital Signature & Document Signing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Digital Signature & Document Signing [![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 
-> A curated directory of the best SaaS platforms and open-source GitHub projects for digital signatures, electronic signatures (e-signature), PDF cryptographic sealing, PAdES/eIDAS compliance, and tamper-evident audit trails.
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Digital Signature & Document Signing Banner" width="100%" />
+</p>
 
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Signature-Document-Signing?style=social)](https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/stargazers)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/pulls)
+> 📜 A curated directory of the best SaaS platforms and open-source GitHub projects for digital signatures, electronic signatures (e-signature), PDF cryptographic sealing, PAdES/eIDAS compliance, and tamper-evident audit trails.
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColorwwhite" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Digital-Signature-Document-Signing?style=social" alt="GitHub stars" /></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Digital-Signature-Document-Signing/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-## Overview
+## 🔍 Overview
 
 This repository provides an authoritative landscape of **SaaS document signing solutions** and **open-source e-signature alternatives**. Whether you are looking for an enterprise contract workflow (DocuSign, Adobe Acrobat Sign), self-hosting a privacy-first DocuSign alternative (DocuSeal, Documenso, OpenSign), or programmatically applying cryptographic PAdES signatures to PDF documents (pyHanko, pdfsign, open-pdf-sign), this list categorizes the top tools by capabilities, transparency, pricing models, and developer friendliness.
 
-### Key Capabilities Covered
-- **Electronic & Digital Signatures**: Legally binding signature collection under ESIGN, UETA, and eIDAS (SES, AES, QES).
-- **Self-Hosted & Privacy-First**: Open-source signing servers deployable on Docker/Kubernetes for complete data sovereignty.
-- **Cryptographic PDF Sealing**: PAdES baseline compliance, X.509 certificates, RFC 3161 timestamps, Long-Term Validation (LTV), and post-quantum cryptography (ML-DSA).
-- **Cloud KMS & Hardware Security**: Seamless integration with AWS KMS, Google Cloud KMS, Azure Key Vault, PKCS#11, and hardware security modules (HSMs).
+### 🌟 Key Capabilities Covered
+- ✍️ **Electronic & Digital Signatures**: Legally binding signature collection under ESIGN, UETA, and eIDAS (SES, AES, QES).
+- 🔒 **Self-Hosted & Privacy-First**: Open-source signing servers deployable on Docker/Kubernetes for complete data sovereignty.
+- 🔏 **Cryptographic PDF Sealing**: PAdES baseline compliance, X.509 certificates, RFC 3161 timestamps, Long-Term Validation (LTV), and post-quantum cryptography (ML-DSA).
+- 🛡️ **Cloud KMS & Hardware Security**: Seamless integration with AWS KMS, Google Cloud KMS, Azure Key Vault, PKCS#11, and hardware security modules (HSMs).
 
 ---
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Full-Featured Signing Suites & Engines](#full-featured-signing-suites--engines)
-  - [Specialized Signature Pads & UI Components](#specialized-signature-pads--ui-components)
-- [Selection Guide: Which Tool Should You Choose?](#selection-guide-which-tool-should-you-choose)
-- [How to Contribute](#how-to-contribute)
-- [License & Disclaimer](#license--disclaimer)
+## 📑 Table of Contents
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS/Hosted Platforms](#️-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🚀 Full-Featured Signing Suites & Engines](#-full-featured-signing-suites--engines)
+  - [🎨 Specialized Signature Pads & UI Components](#-specialized-signature-pads--ui-components)
+- [🧭 Selection Guide: Which Tool Should You Choose?](#-selection-guide-which-tool-should-you-choose)
+- [📊 Star History](#-star-history)
+- [💖 Support](#-support)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ License & Disclaimer](#️-license--disclaimer)
 
-## Sector Overview & Market Dynamics
+## 📈 Sector Overview & Market Dynamics
 
 The global digital signature market is valued at approximately **$12–$14 billion in 2025–2026** and is expanding at a ~25–35% CAGR driven by global eIDAS 2.0 regulations, remote workforce demands, and zero-trust security postures. The sector exhibits a **moderately fragmented** structure: while enterprise behemoths like Adobe and DocuSign dominate mainstream commercial contracts, the broader space remains diversified with specialized PKI trust service providers, regional sovereign compliance vendors, and developer-first API signing solutions.
 
-## SaaS/Hosted Platforms
+## ☁️ SaaS/Hosted Platforms
 
 | Product | Description | Starting Pricing | Free Tier / Free Trial Limits | Company Size / Valuation |
 |---|---|---|---|---|
@@ -46,9 +57,9 @@ The global digital signature market is valued at approximately **$12–$14 billi
 | **[PandaDoc](https://www.pandadoc.com/)** | End-to-end document workflow platform combining proposals, quotes, CPQ, contract negotiation, and legally binding e-signatures. | **$19.00/seat/month** (Starter plan, annual; unlimited document sends) | **Free-forever plan**: 5 documents/month with payment processing; **14-day free trial** for Business tier + **Free API sandbox** | ~$1.0 Billion private valuation (Unicorn) / ~$100 Million ARR |
 | **[OneSpan Sign](https://www.onespan.com/)** | Enterprise-grade digital agreement and authentication platform built for heavily regulated banking, finance, insurance, and government sectors. | **$22.00/user/month** (Professional plan, annual; up to 1,000 transactions/user/year) | **30-day free trial** (full enterprise feature evaluation); **Free non-expiring developer sandbox** | ~$800 Million market cap / ~$243 Million annual revenue |
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
-### Full-Featured Signing Suites & Engines
+### 🚀 Full-Featured Signing Suites & Engines
 
 | Project | Star Badge | Description |
 |---|---|---|
@@ -64,7 +75,7 @@ The global digital signature market is valued at approximately **$12–$14 billi
 | **[Digitorus pdfsign](https://github.com/digitorus/pdfsign)** | [![Stars](https://img.shields.io/github/stars/digitorus/pdfsign?style=social&color=white)](https://github.com/digitorus/pdfsign/stargazers) | **Pure Go library and CLI for digitally signing and verifying PDFs with PAdES_B_T format.** Supports post-quantum ML-DSA signatures, fluent visual appearance configuration, TTF font embedding, and external signing backends including AWS KMS, GCP KMS, Azure Key Vault, and PKCS#11/HSMs. |
 | **[signed-page/pdf](https://github.com/signed-page/pdf)** | [![Stars](https://img.shields.io/github/stars/signed-page/pdf?style=social&color=white)](https://github.com/signed-page/pdf/stargazers) | **Rust utility for cryptographically signing PDFs using GPG and Sigstore keyless identity.** Enables multi-party contract signing backed by public OIDC accounts (Google/GitHub/Microsoft) with immutable cryptographic transparency logs without complex PKI infrastructure. |
 
-### Specialized Signature Pads & UI Components
+### 🎨 Specialized Signature Pads & UI Components
 
 | Project | Star Badge | Description |
 |---|---|---|
@@ -75,20 +86,36 @@ The global digital signature market is valued at approximately **$12–$14 billi
 
 ---
 
-## Selection Guide: Which Tool Should You Choose?
+## 🧭 Selection Guide: Which Tool Should You Choose?
 
-- **Need a turnkey, self-hosted web app with an envelope builder?** Choose **[DocuSeal](https://github.com/docusealco/docuseal)** (Ruby/Vue) or **[Documenso](https://github.com/documenso/documenso)** / **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** (TypeScript/Next.js/React).
-- **Need programmatic PDF signing in backend code?**
-  - **Python**: Choose **[pyHanko](https://github.com/MatthiasValvekens/pyHanko)** for PAdES, RFC 3161 timestamps, and AWS/GCP KMS.
-  - **Go**: Choose **[Digitorus pdfsign](https://github.com/digitorus/pdfsign)** for PAdES_B_T and post-quantum signing.
-  - **Node.js**: Choose **[node-signpdf](https://github.com/vbuch/node-signpdf)** for lightweight byte-level signature injection.
-  - **Java / Enterprise**: Choose **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** or **[SignServer CE](https://github.com/Keyfactor/signserver-ce)** for clustered HSM and smartcard operations.
-- **Need a client-side signature pad for web apps?** Integrate **[signature_pad](https://github.com/szimek/signature_pad)** (Vanilla JS) or **[react-signature-canvas](https://github.com/agilgur5/react-signature-canvas)** (React).
-- **Need an enterprise SaaS with complete legal/compliance backing?** Evaluate **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** or **[DocuSign](https://www.docusign.com/)** for enterprise suites, **[Dropbox Sign](https://sign.dropbox.com/)** for straightforward API automation, or **[Zoho Sign](https://www.zoho.com/sign/)** for budget-friendly business operations.
+- 📦 **Need a turnkey, self-hosted web app with an envelope builder?** Choose **[DocuSeal](https://github.com/docusealco/docuseal)** (Ruby/Vue) or **[Documenso](https://github.com/documenso/documenso)** / **[OpenSign](https://github.com/OpenSignLabs/OpenSign)** (TypeScript/Next.js/React).
+- ⚙️ **Need programmatic PDF signing in backend code?**
+  - 🐍 **Python**: Choose **[pyHanko](https://github.com/MatthiasValvekens/pyHanko)** for PAdES, RFC 3161 timestamps, and AWS/GCP KMS.
+  - 🐹 **Go**: Choose **[Digitorus pdfsign](https://github.com/digitorus/pdfsign)** for PAdES_B_T and post-quantum signing.
+  - 🟢 **Node.js**: Choose **[node-signpdf](https://github.com/vbuch/node-signpdf)** for lightweight byte-level signature injection.
+  - ☕ **Java / Enterprise**: Choose **[open-pdf-sign](https://github.com/open-pdf-sign/open-pdf-sign)** or **[SignServer CE](https://github.com/Keyfactor/signserver-ce)** for clustered HSM and smartcard operations.
+- ✍️ **Need a client-side signature pad for web apps?** Integrate **[signature_pad](https://github.com/szimek/signature_pad)** (Vanilla JS) or **[react-signature-canvas](https://github.com/agilgur5/react-signature-canvas)** (React).
+- 🏢 **Need an enterprise SaaS with complete legal/compliance backing?** Evaluate **[Adobe Acrobat Sign](https://www.adobe.com/sign.html)** or **[DocuSign](https://www.docusign.com/)** for enterprise suites, **[Dropbox Sign](https://sign.dropbox.com/)** for straightforward API automation, or **[Zoho Sign](https://www.zoho.com/sign/)** for budget-friendly business operations.
 
 ---
 
-## How to Contribute
+## 📊 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Digital-Signature-Document-Signing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Digital-Signature-Document-Signing&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+Thank you for exploring this curated digital signature and document signing ecosystem! If you find this repository valuable:
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** and contribute your favorite e-signature and PDF signing tools.
+- 📢 **Share** it with fellow developers, privacy advocates, and legal ops teams.
+- ☕ **Buy me a coffee**: Support the ongoing maintenance and curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
 
 1. Fork this repository.
 2. Add or update entries in `README.md` keeping the established tabular and metadata conventions.
@@ -97,7 +124,7 @@ The global digital signature market is valued at approximately **$12–$14 billi
 
 ---
 
-## License & Disclaimer
+## ⚖️ License & Disclaimer
 
 - **License**: Content is licensed under [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (CC0 1.0).
 - **Community Curated**: This is a community-maintained list and does not constitute a formal legal or security endorsement.
